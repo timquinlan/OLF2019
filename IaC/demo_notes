@@ -1,0 +1,12 @@
+ipmitool -I lanplus -U admin -P password -H 192.168.122.1 -p 6011 power status
+
+openstack overcloud node import ~/instackenv.json
+
+openstack baremetal node list
+openstack baremetal node show [uuid]
+
+openstack overcloud node introspect --all-manageable --provide
+
+openstack baremetal node list
+openstack baremetal node show [uuid]
+

@@ -1,0 +1,6 @@
+[webservers]
+prod1 ansible_host=192.168.122.182
+#prod2 ansible_host=192.168.122.249
+
+[loadbalancer]
+lb1 ansible_host=192.168.122.181

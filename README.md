@@ -1,2 +1,4 @@
 # OLF2019
-Example files for Ohio Linux Fest talks
+Example files and slides for Ohio Linux Fest talks
+
+

@@ -1,0 +1,17 @@
+- name: Enable Webservers
+  hosts: loadbalancer
+  become: yes
+  tasks:
+    - name: Enable prod hosts in the LB
+      copy:
+        src: ./haproxy.cfg
+        dest: /etc/haproxy
+        owner: root
+        group: root
+        mode: 0644
+
+    - name: reload haproxy
+      service: 
+        name: haproxy
+        enabled: true
+        state: reloaded

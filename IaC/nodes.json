@@ -1,0 +1,30 @@
+{
+    "nodes": [
+        {
+            "name":"osp13-p50-a-controller",
+            "pm_type":"ipmi",
+            "mac":[
+                "52:54:00:d1:3b:b0"
+            ],
+            "pm_user":"admin",
+            "pm_password":"password",
+            "pm_addr":"192.168.122.1",
+            "pm_port":"6011",
+            "capabilities": "profile:control,boot_option:local"
+        },
+        {
+            "name":"osp13-p50-b-compute",
+            "pm_type":"ipmi",
+            "mac":[
+                "52:54:00:75:75:e5"
+            ],
+            "pm_user":"admin",
+            "pm_password":"password",
+            "pm_addr":"192.168.122.1",
+            "pm_port":"6012",
+            "capabilities": "profile:compute,boot_option:local"
+        }
+
+    ]
+}
+

@@ -1,0 +1,8 @@
+- name: Server Survey with facts
+  hosts: webservers
+  become: yes
+  tasks:
+    - name: Get hostname, OS family and processor count
+      debug: 
+        msg: "{{ansible_nodename }} {{ ansible_os_family }} {{ ansible_processor_count }}"
+
